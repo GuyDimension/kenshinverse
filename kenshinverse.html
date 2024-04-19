@@ -4,76 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KENSHIN VERSE</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <style>
 body{
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
-#section_top{
-    background-color:#333535e6;
-    width: 100%;
-    position: relative;
-    min-height: 50px; 
-} 
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-height: 50px;
+.navbar {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(109, 104, 104, 0.952);    
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
-.logo{
-        position: relative;
-        max-width: 50px;
-        /* border: 1px solid #000; */
-        margin-left: 110px;
-        margin-top: 45px;
-        border-radius: 100px;
-        background-color: rgba(131, 128, 128, 0);   
 
-    }
-header #navbar li{
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    height: auto;
+    width:  20px;
+
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.nav-links img {
+    width: 20px; 
+    height: 15px; 
     margin-right: 5px;
-    display: inline-block;
-    color: rgba(238, 235, 235, 0.904);
-    font-weight: 500;
-    text-decoration: none; 
+    margin-top: 0;
+    margin-bottom: 0; 
 }
-.Transaksi {
-    font-size: medium;
+
+.nav-links li {
+    margin-right: 20px;
 }
-header #navbar1 li{
-    margin-right: 15px;
-    display: inline-block;
-    color: rgb(247, 241, 241);
-    font-weight: 500;
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
     text-decoration: none;
-
+    color: #fff;
     
-
 }
-    #navbar {
-        position: relative;
-            display: flex;
-            margin-right: 70px;
-            
-    }
-    #navbar1 {
-        position: relative;
-        display: flex;
-        /* margin-right: 100px; */
-        margin-right: 600px;
-    }
 
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    margin-right: 20px;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* CSS untuk dropdown bahasa */
+.language {
+    position: relative;
+    cursor: pointer;
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+</style>
+
+<style>
 #section_top_middle{
     
     background-color: #f3f3f3;
@@ -134,35 +184,53 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-img {
-    width: 1000px;
-    border-radius: 20px;
-    background-color: #717171;
-    margin-top: 50px;
-    margin-bottom: 30px;
+.mySlides img {
+    width: 1000px; /* Lebar gambar slider */
+    border-radius: 20px; /* Sudut bulat untuk gambar */
+    background-color: #717171; /* Warna latar belakang */
+    margin-top: 50px; /* Jarak atas */
+    margin-bottom: 30px; /* Jarak bawah */
 }
-
 </style>
 <body>
-    <div id="section_top">
-    <header>
-        <img src="img/ken.png" class="logo" id="logo">
-        <ui id="navbar1">
-            <li><a class="beranda">Beranda</a></li>
-            <li><input type="text" placeholder="Cek Transaksi" class="Transaksi"></li>
-        </ui>   
-        <ui id="navbar">
-            <li><input type="text" placeholder="Search..." class="search"></li>
-            <li><button class="ID">ID</button></li>
-            <li><button class="ENG">ENG</button></li>
-        </ui>
-    </header>
-    <header1>
 
-    </header1>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="img/ken.png">
+                </div>
+                <ul class="nav-links">
+                    <li><img src="img/rumah.png"><a href="#">Beranda</a></li>
+                    <li><img src="img/search.png"><a href="#">Cek Transaksi</a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <div class="search">
+                    <input type="text" placeholder="Cari...">
+                </div>
+                <div class="language" id="language-dropdown">
+                    <span id="language-btn">Bahasa</span>
+                    <span class="arrow-down"></span>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="#" id="id-language">ID</a>
+                        <a href="#" id="eng-language">Eng</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var languageBtn = document.getElementById("language-btn");
+    var dropdownContent = document.getElementById("dropdown-content");
 
-    <div id="section_top_middle">
+    languageBtn.addEventListener("click", function() {
+        dropdownContent.classList.toggle("show");
+    });
+});
+    </script>
+
+<div id="section_top_middle">
         <div class ="slide-banner">
             <div class="mySlides fade">
                 <img src="img/4.jpeg" style="width:100%" id="slider">
@@ -175,13 +243,13 @@ img {
               <div class="mySlides fade">
                 <img src="img/2.jpeg" style="width:100%" id="slider">
               </div>
-
+    
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-
-<script>
+    
+    <script>
         let slideIndex = 1;
         showSlides(slideIndex);
         function plusSlides(n) {
@@ -198,11 +266,7 @@ img {
          }
         slides[slideIndex-1].style.display = "block";  
     }
-</script> 
-
-    <div id="section_middle"></div>
-    <div id="section_middle_buttom"></div>
-    <div id="section_bottom"></div>
-     
+    </script> 
+    
 </body>
 </html>
