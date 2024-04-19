@@ -12,26 +12,80 @@ body{
 }
 #section_top{
     background-color:#333535e6;
+    width: 100%;
+    position: relative;
+    min-height: 500px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 50px;
+    display: flex;
+    /* justify-content: space-between;   */
+    align-items: center;
+    background-color: rgb(248, 238, 238);   
 }
 .logo{
         position: relative;
         max-width: 50px;
         /* border: 1px solid #000; */
         margin-left: 10px;
+        margin-top: 20px;
         border-radius: 100px;
     }
+header #navbar li{
+    margin-right: 10px;
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    justify-content: space-between;  
+
+
+}
+header #navbar1 li{
+    margin-right: 10px;
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+    #navbar {
+        position: relative;
+            display: flex;
+            margin-right: 70px;
+            
+    }
+    #navbar1 {
+        position: relative;
+        display: flex;
+        /* margin-right: 100px; */
+    }
+
+
 </style>
 <body>
-    <div id="section_top"
+    <div id="section_top"></div>
     <header>
         <img src="img/ken.png" class="logo" id="logo">
+        <ui id="navbar1">
+            <li><a class="beranda">Beranda</a></li>
+            <li><input type="text" placeholder="Cek Transaksi" class="Transaksi"></li>
+        </ui>   
         <ui id="navbar">
-            <li><a>Beranda</a></li>
-            <li><a>Cek Transaksi</a></li>
-            <li><a>Search</a></li>
-            <li><a>ID</a></li>
+            <li><input type="text" placeholder="Search..." class="search"></li>
+            <li><button class="ID">ID</button></li>
+            <li><button class="ENG">ENG</button></li>
         </ui>
     </header>
+    <header1>
+        
+    </header1>
     <div id="section_top_middle"></div>
     <div id="section_middle"></div>
     <div id="section_middle_buttom"></div>
