@@ -96,8 +96,8 @@ body{
     background-color: #5e7106;
     padding-top: 11px;
     padding-bottom: 13px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 12px;
+    padding-left:7px;
 }
 
 .arrow-down {
@@ -117,17 +117,19 @@ body{
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 10px;
     color: #f1f1f1;
-    padding-right: 2px;
+    padding-right: 0px;
     margin-left: 0px;
-    margin-right: 10px;
+    margin-right: 0px;
+    right: 0.5px;
+    left: -1.0px;
 }
 
 .dropdown-content a {
     color:rgb(248, 244, 244);
-    padding: 12px 16px;
+    padding: 10px 16px;
     text-decoration:#070707;
     display: block;
     border-radius: 10px;
@@ -158,6 +160,14 @@ body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
+.batik-background {
+    background-image: url( 'img/batik.png');
+    background-size: 500px;
+    background-repeat: repeat;
+}
+.batik-background:hover {
+    opacity:100%;
+}
 
 .slide-banner {
   max-width: 1000px;
@@ -193,6 +203,7 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+
 
 .fade {
   animation-name: fade;
@@ -256,6 +267,7 @@ img {vertical-align: middle;}
     </script>
 
 <div id="section_top_middle">
+    <div class="batik-background">
         <div class ="slide-banner">
             <div class="mySlides fade">
                 <img src="img/4.jpeg" style="width:100%" id="slider">
@@ -273,6 +285,7 @@ img {vertical-align: middle;}
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
+    </div>
 </div>
     <script>
         let slideIndex = 0;
