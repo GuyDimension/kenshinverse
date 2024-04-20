@@ -24,15 +24,20 @@ body{
 .navbar-left {
     display: flex;
     align-items: center;
+
 }
 
 .logo {
     margin-right: 20px;
+    height: auto;
+    width: 30px;
+    margin-bottom: 2px;
+    border-radius: 50px;
 }
 
 .logo img {
     height: auto;
-    width:  20px;
+    width:  35px;
 
 }
 
@@ -41,29 +46,29 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 .nav-links img {
-    width: 20px; 
-    height: 15px; 
+    width: 25px; 
+    height: 20px; 
     margin-right: 5px;
+    margin-left: 18px;
     margin-top: 0;
-    margin-bottom: 0; 
+    margin-bottom: 5px; 
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .nav-links li:last-child {
-    margin-right: 0;
+    margin-right: 30px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #fff;
-    
 }
 
 .navbar-right {
@@ -81,7 +86,6 @@ body{
     border-radius: 4px;
 }
 
-/* CSS untuk dropdown bahasa */
 .language {
     position: relative;
     cursor: pointer;
@@ -125,8 +129,7 @@ body{
 
 <style>
 #section_top_middle{
-    
-    background-color: #f3f3f3;
+    background: radial-gradient(ellipse at bottom, #0D1E31, #111);
     width: 100%;
     position: relative;
     min-height: 50px;
@@ -145,7 +148,6 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
-
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -185,12 +187,13 @@ img {vertical-align: middle;}
 }
 
 .mySlides img {
-    width: 1000px; /* Lebar gambar slider */
-    border-radius: 20px; /* Sudut bulat untuk gambar */
-    background-color: #717171; /* Warna latar belakang */
-    margin-top: 50px; /* Jarak atas */
-    margin-bottom: 30px; /* Jarak bawah */
+    width: 1000px; 
+    border-radius: 20px; 
+    background-color: #717171; 
+    margin-top: 50px; 
+    margin-bottom: 30px; 
 }
+
 </style>
 <body>
 
@@ -246,9 +249,9 @@ img {vertical-align: middle;}
     
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    
+        </div>
+        <br>
+</div>
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
@@ -267,6 +270,5 @@ img {vertical-align: middle;}
         slides[slideIndex-1].style.display = "block";  
     }
     </script> 
-    
 </body>
 </html>
