@@ -162,7 +162,7 @@ img {vertical-align: middle;}
 
 .batik-background {
     background-image: url( 'img/batik.png');
-    background-size: 500px;
+    background-size: 1000px;
     background-repeat: repeat;
 }
 .batik-background:hover {
@@ -205,15 +205,20 @@ img {vertical-align: middle;}
 }
 
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.slide-Right {
+  animation: slideRight 5s easy-int-out forward;
+  animation-duration: 5s;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
+
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -228,6 +233,60 @@ img {vertical-align: middle;}
 }
 
 </style>
+<style>
+.section_middle{
+    display: flex;
+    max-height: 400px;
+    background: radial-gradient(circle at right, #b08702, #0f0f0f);
+    padding-bottom: 50%;
+}
+
+.custom-button1 {
+    width: 200px;
+    height: 200px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.custom-button2 {
+    width: 200px;
+    height: 200px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.custom-button3 {
+    width: 200px;
+    height: 200px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.custom-button4 {
+    width: 200px;
+    height: 200px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 400px;
+    margin-right: 100px;
+}
+.custom-button5 {
+    width: 200px;
+    height: 200px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 400px;
+    margin-right: 100px;
+}
+.button_left{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+</style>
 <body>
 
         <nav class="navbar">
@@ -237,7 +296,7 @@ img {vertical-align: middle;}
                 </div>
                 <ul class="nav-links">
                     <li><img src="img/rumah.png"><a href="#">Beranda</a></li>
-                    <li><img src="img/search.png"><a href="#">Cek Transaksi</a></li>
+                    <!-- <li><img src="img/search.png"><a href="#">Cek Transaksi</a></li> -->
                 </ul>
             </div>
             <div class="navbar-right">
@@ -302,6 +361,49 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+
     </script> 
+
+<div id="section_middle" class="section_middle">
+    <button id="Button1" class="custom-button1">Top up Diamond</button>
+    <button id="Button2" class="custom-button2">Joki Rank</button>
+    <button id="Button3" class="custom-button3">Gift Skin</button>
+    <button id="Button4" class="custom-button4"> Starlight</button>
+    <button id="Button5" class="custom-button5">Weekly Daimond Pass</button>
+</div>
+    <script>
+        var button1 = document.getElementById("button1");
+        var button2 = document.getElementById("button2");
+        var button3 = document.getElementById("button3");
+        var button4 = document.getElementById("button4");
+        var button5 = document.getElementById("button5");
+
+        button1.addEventListener("click", function() {
+            alert("button 1 ditekan!");
+        });
+
+        button2.addEventListener("click", function() {
+            alert("button 2 ditekan!");
+        });
+
+        button3.addEventListener("click", function() {
+            alert("button 3 ditekan!");
+        });
+
+        button4.addEventListener("click", function() {
+            alert("button 4 ditekan!");
+        });
+
+        button5.addEventListener("click", function() {
+            alert("button 5 ditekan!");
+        });
+    </script>
+<div id="section_buttom_left">
+    <div class="button_left">
+    <h1>Visi</h1>
+    Kenshin Verse bercita-cita menjadi sebuah online store yang dapat dipercaya dan diakses dengan mudah oleh semua penikmat game.
+    <h2>Misi</h2>
+</div>
+
 </body>
 </html>
