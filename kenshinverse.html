@@ -162,7 +162,7 @@ img {vertical-align: middle;}
 
 .batik-background {
     background-image: url( 'img/batik.png');
-    background-size: 1000px;
+    background-size: 500px;
     background-repeat: repeat;
 }
 .batik-background:hover {
@@ -205,20 +205,15 @@ img {vertical-align: middle;}
 }
 
 
-.slide-Right {
-  animation: slideRight 5s easy-int-out forward;
-  animation-duration: 5s;
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-@keyframes slideRight {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
-
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -231,61 +226,46 @@ img {vertical-align: middle;}
     margin-top: 50px; 
     margin-bottom: 30px; 
 }
-
-</style>
-<style>
-.section_middle{
+#section_bottom_left {
+    /* margin-left: 100px; */
+    padding-top: 30px;
+    background: radial-gradient(circle at left, #b08702, #0f0f0f);
+    /* float: l; */
+    padding-left : 100px;
+    padding-right: 100px;
+    padding-bottom: 150px;
     display: flex;
-    max-height: 400px;
-    background: radial-gradient(circle at right, #b08702, #0f0f0f);
-    padding-bottom: 50%;
+    position: justify;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Times New Roman';
+    /* margin-bottom: 100px; */
 }
-
-.custom-button1 {
-    width: 200px;
-    height: 200px;
-    font-size: 16px;
-    border-radius: 20px;
-    margin-top: 100px;
-    margin-left: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.custom-button2 {
-    width: 200px;
-    height: 200px;
-    font-size: 16px;
-    border-radius: 20px;
-    margin-top: 100px;
-    margin-left: 100px;
-}
-.custom-button3 {
-    width: 200px;
-    height: 200px;
-    font-size: 16px;
-    border-radius: 20px;
-    margin-top: 100px;
-    margin-left: 100px;
-}
-.custom-button4 {
-    width: 200px;
-    height: 200px;
-    font-size: 16px;
-    border-radius: 20px;
-    margin-top: 400px;
+/* #section_botton_right {
     margin-right: 100px;
+    background: radial-gradient(circle at left, #b08702, #0f0f0f);
+    float: right;
+    padding: 50px;
+    font-family: 'Times New Roman';
+} */
+#title_visi {
+    color: gold;
+    float:left;
 }
-.custom-button5 {
-    width: 200px;
-    height: 200px;
-    font-size: 16px;
-    border-radius: 20px;
-    margin-top: 400px;
-    margin-right: 100px;
+/* #visi {
+    color: gold;
+    float: left;
+} */
+#title_misi {
+    color: gold;
+    float: right;
 }
-.button_left{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
+/* #misi {
+    color: gold;
+    float: right;
+} */
+
+
 </style>
 <body>
 
@@ -296,7 +276,7 @@ img {vertical-align: middle;}
                 </div>
                 <ul class="nav-links">
                     <li><img src="img/rumah.png"><a href="#">Beranda</a></li>
-                    <!-- <li><img src="img/search.png"><a href="#">Cek Transaksi</a></li> -->
+                    <li><img src="img/search.png"><a href="#">Cek Transaksi</a></li>
                 </ul>
             </div>
             <div class="navbar-right">
@@ -361,48 +341,43 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
-
     </script> 
 
-<div id="section_middle" class="section_middle">
-    <button id="Button1" class="custom-button1">Top up Diamond</button>
-    <button id="Button2" class="custom-button2">Joki Rank</button>
-    <button id="Button3" class="custom-button3">Gift Skin</button>
-    <button id="Button4" class="custom-button4"> Starlight</button>
-    <button id="Button5" class="custom-button5">Weekly Daimond Pass</button>
+<div id="section_bottom_left">
+    <div id="title_visi">
+        <h1>Visi</h1>
+        <p>Kenshin Verse bercita-cita menjadi <br>
+          sebuah online store yang dapat dipercaya <br>
+          dan diakses dengan mudah oleh semua penikmat game.</p>
+    </div>
+    <!-- <div id="visi"> -->
+        <!-- Kenshin Verse bercita-cita menjadi sebuah online store yang dapat dipercaya 
+        dan diakses dengan mudah oleh semua penikmat game. -->
+    <!-- </div> -->
+    <div id="title_misi">
+        <h1>Misi</h1>
+        <p>Melayani transaksi lintas negara <br>
+           Memberikan harga yang murah kepada pelanggan <br>
+           Memberikan pelayanan yang berkualitas dan cepat <br>
+           Rutin memberikan promosi yang menarik.<br> </p>
+    </div>
+    <!-- <div id="misi"> -->
+        <!-- Melayani transaksi lintas negara <br>
+        Memberikan harga yang murah kepada pelanggan <br>
+        Memberikan pelayanan yang berkualitas dan cepat <br>
+        Rutin memberikan promosi yang menarik <br> -->
+    <!-- </div> -->
 </div>
-    <script>
-        var button1 = document.getElementById("button1");
-        var button2 = document.getElementById("button2");
-        var button3 = document.getElementById("button3");
-        var button4 = document.getElementById("button4");
-        var button5 = document.getElementById("button5");
-
-        button1.addEventListener("click", function() {
-            alert("button 1 ditekan!");
-        });
-
-        button2.addEventListener("click", function() {
-            alert("button 2 ditekan!");
-        });
-
-        button3.addEventListener("click", function() {
-            alert("button 3 ditekan!");
-        });
-
-        button4.addEventListener("click", function() {
-            alert("button 4 ditekan!");
-        });
-
-        button5.addEventListener("click", function() {
-            alert("button 5 ditekan!");
-        });
-    </script>
-<div id="section_buttom_left">
-    <div class="button_left">
-    <h1>Visi</h1>
-    Kenshin Verse bercita-cita menjadi sebuah online store yang dapat dipercaya dan diakses dengan mudah oleh semua penikmat game.
-    <h2>Misi</h2>
+<!-- <div id="section_bottom_right"> -->
+    <!-- <div id="title_misi">
+        <h1>Misi</h1>
+    </div>
+    <div id="misi">
+        Melayani transaksi lintas negara <br>
+        Memberikan harga yang murah kepada pelanggan <br>
+        Memberikan pelayanan yang berkualitas dan cepat <br>
+        Rutin memberikan promosi yang menarik <br>
+    </div> -->
 </div>
 
 </body>
