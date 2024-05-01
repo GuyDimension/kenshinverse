@@ -8,33 +8,30 @@
 </head>
 
 <body>
-        <nav class="navbar">
-            <div class="navbar-left">
-                <div class="logo">
-                    <img src="img/ken.png">
-                    <div class="kenshin">Kenshin </div>
-                    <div class="verse">Verse</div>
-                </div>
-                <ul class="nav-links">
-                    <li><img src="img/rumah.png"><a href="#">Beranda</a></li>
-                    <li><a href="#">Tentang Kami</a></li>
-                </ul>
-            </div>
-            <div class="navbar-right">
-                <div class="search">
-                    <input type="text" placeholder="Cari...">
-                </div>
-                <div class="language" id="language-dropdown">
-                    <span id="language-btn">Bahasa</span>
-                    <span class="arrow-down"></span>
-                    <div class="dropdown-content" id="dropdown-content">
-                        <a href="#" id="id-language">ID</a>
-                        <a href="#" id="eng-language">ENG</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+  <nav class="navbar">
+    <div class="navbar-left">
+        <div class="logo">
+            <img src="img/ken.png" alt="Logo" width="70px" height="70px">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+        </ul>
     </div>
+    <div class="navbar-right">
+        <div class="search">
+            <input type="text" placeholder="Cari...">
+        </div>
+        <div class="language" id="language-dropdown">
+            <span id="language-btn">Bahasa</span>
+            <span class="arrow-down"></span>
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="#" id="id-language">ID</a>
+                <a href="#" id="eng-language">ENG</a>
+            </div>
+        </div>
+    </div>
+</nav>
     <script type="text/javascript" src="js1.js"></script>
 
 <div id="section_top_middle">
@@ -62,7 +59,7 @@
 
     <article>
         <div class="section1">
-          <img src="img/tes.jpg" style="height: 250px; margin: 20px;">
+          <img src="img/tes.png" width="500px" height="380px" margin="35px">
         </div>
         <div class="container">
           <p class="title">
@@ -72,41 +69,52 @@
       
       </article>
       
-    <div id="section_bottom_middle">
-
-        <div class="box">
-          <h2>Top Up</h2>
-          <img src="img/topup.jpg"> 
-          <p></p>
-          <a href="Topup.html" class="btn">Selengkapnya</a>
-
-        </div>
-        <div class="box">
-          <h2>Joki Rank</h2>
-          <img src="img/joki.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet felis a velit laoreet interdum.</p>
-          <a href="joki rank.html" class="btn">Selengkapnya</a>
-        </div>
-        <div class="box">
-          <h2>Starlight</h2>
-          <img src="img/starlight.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet felis a velit laoreet interdum.</p>
-          <a href="starlight.html" class="btn">Selengkapnya</a>
-        </div>
-        <div class="box">
-          <h2>Give Skin</h2>
-          <img src="img/giveskin.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet felis a velit laoreet interdum.</p>
-          <a href="give skin.html" class="btn">Selengkapnya</a>
-        </div>
-        <div class="box">
-          <h2>Weekly Diamond Pass</h2>
-          <img src="img/MLBB Weekly Diamond Pass _ Codashop Blog Singapore.jpg"> 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet felis a velit laoreet interdum.</p>
-          <a href="weekly diamond pass.html" class="btn">Selengkapnya</a>  
-        </div>
-    <div class="dropdown-botton">
+<div id="section_bottom_middle">
+  <div class="card-container">
+    <div class="card">
+      <img src="img/topup.jpg">
+      <div class="card-content">
+        <h3>Top Up</h3>
+        <p>Top up diamond untuk membeli skin, change name, gacha recall, skin, dan lain lainnya</p>
+        <a href="Topup.html" class="btn">Selengkapnya</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/joki.jpg">
+      <div class="card-content">
+        <h3>Joki Rank</h3>
+        <p>Joki rank untuk meningkatkan rank dengan hero pilihanmu dalam waktu singkat tanpa perlu bermain</p>
+        <a href="joki rank.html" class="btn">Selengkapnya</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/starlight.jpg">
+      <div class="card-content">
+        <h3>Starlight</h3>
+        <p>Beli starlight secara langsung untuk mendapatkan harga lebih murah dibandingkan dengan membeli menggunakan diamond sendiri</p>
+        <a href="starlight.html" class="btn">Selengkapnya</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/giftskin.jpg">
+      <div class="card-content">
+        <h3>Gift Skin</h3>
+        <p>Gift skin untuk membeli skin secara langsung dengan harga lebih murah dibandingkan dengan membeli menggunakan diamond sendiri</p>
+        <a href="gift skin.html" class="btn">Selengkapnya</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/MLBB Weekly Diamond Pass _ Codashop Blog Singapore.jpg">
+      <div class="card-content">
+        <h3>Weekly Diamond Pass</h3>
+        <p>Beli weekly diamond pass untuk mendapatkan diamond setiap harinya dengan biaya lebih murah untuk jumlah diamond yang sama saat membeli diamond instan</p>
+        <a href="weekly diamond pass.html" class="btn">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div id="section_bottom"></div>
 
 </body>
 </html>
