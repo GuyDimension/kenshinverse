@@ -31,7 +31,22 @@ body{
     width:  70px;
 
 }
-
+.kenshin {
+    text-transform: uppercase;
+    padding-left: 18px;
+    padding-right: 10px;
+    font-size: 8px;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+.verse {
+    text-transform: uppercase;
+    padding-left: 23px;
+    padding-right: 10px;
+    font-size: 8px;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
 .nav-links {
     list-style: none;
     margin: 0;
@@ -153,7 +168,7 @@ img {vertical-align: middle;}
 
 .batik-background {
     background-image: url( 'img/batik.png');
-    background-size: 500px;
+    background-size: 10px;
     background-repeat: repeat;
 }
 .batik-background:hover {
@@ -218,6 +233,38 @@ img {vertical-align: middle;}
     margin-bottom: 30px; 
 }
 
+.section1 {
+    weight: 1000px;
+    height: 25px;
+    top: 220px;
+    bottom:200px;
+    position: relative; 
+    display: flex; 
+    margin-left: 100px;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+    top: 100px;
+    height: 500px;
+  }
+  
+  .title {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 20px;
+    margin-left: 300px;
+    margin-bottom: 400px;
+    top: 50px;
+    line-height: 40px;
+    padding-top: 25px;
+    padding-left: 20px;
+    
+  }
+  
 #section_bottom_middle {
     display: flex; 
     flex-wrap: wrap; 
@@ -227,7 +274,7 @@ img {vertical-align: middle;}
   }
 
   .box {
-    background-color: grey;
+    background: radial-gradient(circle at left, #535351, #423e3e);
     width: 350px;
     height: 500px;
     padding: 20px;
@@ -238,77 +285,60 @@ img {vertical-align: middle;}
     align-self: center;
     border: white;
     position: relative;
+    border-radius: 15px;
+    
   }
   
   .box h2 {
     font-size: 18px;
     margin-top: 0;
-    color: white;
+    color: rgb(248, 243, 243);
+    margin: 10px 5px 15px 20px;
   }
-  
   .box img {
     width: 300px;
     height: 200px;
     margin-left: 5px;
+    border-radius: 10px;
   }
   
   .box p {
     font-size: 14px;
     margin-top: 10px;
+    border-radius: 15px;
   }
   .box-bottom {
     margin-top: 20px; /* Jarak antara box 3 dan box 4 */
     margin-bottom: 20px;
   }
-  
-#section_bottom_left {
-    /* margin-left: 100px; */
-    padding-top: 30px;
-    background: radial-gradient(circle at left, #b08702, #0f0f0f);
-    /* float: l; */
-    padding-left : 100px;
-    padding-right: 100px;
-    padding-bottom: 80px;
-    display: flex;
-    position: justify;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Times New Roman';
-    /* margin-bottom: 100px; */
-}
-/* #section_botton_right {
-    margin-right: 100px;
-    background: radial-gradient(circle at left, #b08702, #0f0f0f);
-    float: right;
-    padding: 50px;
-    font-family: 'Times New Roman';
-} */
-#title_visi {
-    color: gold;
-    float:left;
-}
-/* #visi {
-    color: gold;
-    float: left;
-} */
-.vl {
-  border-left: 5px solid rgb(255, 255, 255);
-  height: 150px;
-  border-radius: 20px;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  top: 0;
-  opacity: 60%;
-  margin-top: 800px;
-}
+ .btn {
+    display: inline-block;
+    padding:8px 16px;
+    background-color: #f9f4f4;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    font-family: helvetica;
+ }
+ .dropdown-button {
+    display: none;
+    position: absolute;
+    background-color: #070707;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #f1f1f1;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    right: 0.5px;
+    left: -1.0px;
+    font-family: helvetica;
 
-#title_misi {
-    color: gold;
-    float: right;
 }
-/* #misi {
-    color: gold;
-    float: right;
-} */
-
+.btn:hover{
+    background-color: #2a2929;
+    font-family: helvetica;
+}
