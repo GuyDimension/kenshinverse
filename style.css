@@ -217,6 +217,50 @@ img {vertical-align: middle;}
     margin-top: 50px; 
     margin-bottom: 30px; 
 }
+
+#section_bottom_middle {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    background: radial-gradient(circle at left, #b08702, #0f0f0f);
+    position: relative;
+  }
+
+  .box {
+    background-color: grey;
+    width: 350px;
+    height: 500px;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: -1px 0 10px #0000;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border: white;
+    position: relative;
+  }
+  
+  .box h2 {
+    font-size: 18px;
+    margin-top: 0;
+    color: white;
+  }
+  
+  .box img {
+    width: 300px;
+    height: 200px;
+    margin-left: 5px;
+  }
+  
+  .box p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .box-bottom {
+    margin-top: 20px; /* Jarak antara box 3 dan box 4 */
+    margin-bottom: 20px;
+  }
+  
 #section_bottom_left {
     /* margin-left: 100px; */
     padding-top: 30px;
