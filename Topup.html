@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KENSHIN VERSE</title>
-    <link href="topup.css" rel="stylesheet" type="text/css">
+    <link href="css/topup.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar-left">
             <div class="logo">
-                <img src="img/ken.png" alt="Logo" width="70px" height="70px">
+                <img src="assets/ken.png" alt="Logo" width="70px" height="70px">
             </div>
             <ul class="nav-links">
                 <li><a href="kenshinverse.html">Beranda</a></li>
@@ -19,27 +19,18 @@
             </ul>
         </div>
         <div class="navbar-right">
-            <div class="search">
-                <form action="/search" method="GET">
-                    <input type="text" name="query" placeholder="Cari....">
-                    <button type="submit">Cari</button>
-                  </form>
+              <a href="login.html" class="login-button">Login</a>
+              <a href="signup.html" class="signup-button">Sign Up</a>
             </div>
         </div>
     </nav>
-    <script>
-        const searchInput = document.querySelector('input[name="query"]');
-        searchInput.addEventListener('input', function () {
-          const query = this.value;
-        })
-      </script>
         <section class="section_top">
             <h1 class="Title">Top Up</h1>
             <p class="Konten">
-                Mau Top up ? <br> KENSHIN VERSE aja karena Top up diamond di Kenshin Verse untuk mendapatkan harga termurah dengan pelayanan terbaik dan <br>
-                banyak benefit seperti diskon. Kenshin Verse juga melayani transaksi internasional.
+                Mau Top up ? <br> KENSHIN VERSE aja karena Top up diamond di Kenshin Verse harganya murah dengan pelayanan terbaik <br>
+                dan banyak benefit seperti diskon. Kenshin Verse juga melayani transaksi internasional.
             </p>
-            <img src="img/PLtopup.jpg" alt="image" class="foto" height="350px" width="100px">
+            <img src="assets/PLtopup.jpg" alt="image" class="foto" height="350px" width="100px">
        </section>
 
     <footer id="Contact">

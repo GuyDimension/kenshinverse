@@ -1,3 +1,10 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at right, #383737, #161616);
+}
+
+
 .signup-form {
     max-width: 300px;
     margin: 50px auto;
