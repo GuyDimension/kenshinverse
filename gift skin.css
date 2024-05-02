@@ -125,16 +125,49 @@ body{
     display: block;
 }
 
+.section_top {
+  color: var(--text-color);
+  background: radial-gradient(circle at right, #383737, #161616);
+  padding-top: 20px;
+  padding-bottom: 135px;
+}
+
+.foto{
+  right: 0;
+  position: absolute;
+  top: 0;
+  margin-top: 100px;
+  width: 300px;
+  margin-right: 100px;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+.Title {
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 50px;
+  color: #cac7c7;
+  padding-left: 60px;
+}
+
+.Konten {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #f1f1f1;
+  padding-left: 60px;
+}
+
 footer {
-    background-color: var(--background-color);
-    padding: 20px 0;
-    background: radial-gradient(circle at left, #383737, #161616);
-  
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  background-color: var(--background-color);
+  padding: 20px 0;
+  background: radial-gradient(circle at left, #383737, #161616);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
   }
   
   .footer-section {

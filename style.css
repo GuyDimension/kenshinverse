@@ -127,10 +127,6 @@ body{
 }
 
 .section_top {
-
-  /* margin-top: 90px;
-  margin-bottom: 90px;
-  margin-left: 100px; */
   color: var(--text-color);
   background: radial-gradient(circle at right, #383737, #161616);
   padding-top: 20px;
@@ -372,14 +368,14 @@ footer {
 }
 
 .icon{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    right:50px;
-    padding-left: 1050px;
-    padding-bottom: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right:50px;
+  padding-left: 880px;
+  padding-bottom: 20px;
+}
 
 .icon a {
   position: relative;
