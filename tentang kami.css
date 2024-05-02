@@ -117,6 +117,13 @@ body{
   background-color: #2a2929;
 }
 
+.section_top {
+  color: var(--text-color);
+  background: radial-gradient(circle at right, #383737, #161616);
+  padding-top: 20px;
+  padding-bottom: 135px;
+}
+
 .show {
   display: block;
 }
