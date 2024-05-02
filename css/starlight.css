@@ -146,14 +146,14 @@ footer {
   }
   
   .icon{
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      right:50px;
-      padding-left: 880px;
-      padding-bottom: 20px;
-    }
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+    align-items: center;  
+    margin-left: 580px;
+  }
   
   .icon a {
     position: relative;
