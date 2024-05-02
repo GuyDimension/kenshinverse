@@ -19,21 +19,18 @@
                 </ul>
             </div>
             <div class="navbar-right">
-                <div class="search">
-                    <input type="text" placeholder="Cari...">
-                </div>
-                <div class="language" id="language-dropdown">
-                    <span id="language-btn">Bahasa</span>
-                    <span class="arrow-down"></span>
-                    <div class="dropdown-content" id="dropdown-content">
-                        <a href="#" id="id-language">ID</a>
-                        <a href="#" id="eng-language">ENG</a>
-                    </div>
-                </div>
+              <form action="/search" method="GET">
+                <input type="text" name="query" placeholder="Cari....">
+                <button type="submit">Cari</button>
+              </form>
             </div>
         </nav>
-    <script type="text/javascript" src="js1.js"></script>
-
+<script>
+  const searchInput = document.querySelector('input[name="query"]');
+  searchInput.addEventListener('input', function () {
+    const query = this.value;
+  })
+</script>
 <section class="section_top">
       <h1 class="Title">KENSHIN VERSE</h1>
       <p class="Konten">Memberikan kemudahan bagi para pemain dengan layanan yang berkualitas

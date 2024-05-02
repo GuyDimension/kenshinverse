@@ -148,6 +148,7 @@ body{
   margin-right: 100px;
   border-radius: 20px;
   padding-top: 10px;
+  width: max-content;
 }
 .Title {
   font-size: 50px;
@@ -181,7 +182,7 @@ footer {
   
   .footer-section {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   
   .footer-section h3 {

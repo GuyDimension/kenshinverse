@@ -20,27 +20,26 @@
         </div>
         <div class="navbar-right">
             <div class="search">
-                <input type="text" placeholder="Cari...">
-            </div>
-            <div class="language" id="language-dropdown">
-                <span id="language-btn">Bahasa</span>
-                <span class="arrow-down"></span>
-                <div class="dropdown-content" id="dropdown-content">
-                    <a href="#" id="id-language">ID</a>
-                    <a href="#" id="eng-language">ENG</a>
-                </div>
+                <form action="/search" method="GET">
+                    <input type="text" name="query" placeholder="Cari....">
+                    <button type="submit">Cari</button>
+                  </form>
             </div>
         </div>
     </nav>
-        <script type="text/javascript" src="js1.js"></script>
-        
+    <script>
+        const searchInput = document.querySelector('input[name="query"]');
+        searchInput.addEventListener('input', function () {
+          const query = this.value;
+        })
+      </script>
         <section class="section_top">
             <h1 class="Title">Top Up</h1>
             <p class="Konten">
-                Top up diamond di Kenshin Verse untuk mendapatkan harga termurah dengan pelayanan terbaik dan <br>
+                Mau Top up ? <br> KENSHIN VERSE aja karena Top up diamond di Kenshin Verse untuk mendapatkan harga termurah dengan pelayanan terbaik dan <br>
                 banyak benefit seperti diskon. Kenshin Verse juga melayani transaksi internasional.
             </p>
-            <img src="img/PLtopup.jpg" alt="image" class="foto" height="350px" width="450px">
+            <img src="img/PLtopup.jpg" alt="image" class="foto" height="350px" width="100px">
        </section>
 
     <footer id="Contact">
