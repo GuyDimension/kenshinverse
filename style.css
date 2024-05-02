@@ -7,7 +7,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: radial-gradient(circle at left, #574301, #070707);
+  background: radial-gradient(circle at left, #383737, #161616);
   color: #fff;
   padding: 5px 40px;
 }
@@ -72,11 +72,12 @@ body{
   position: relative;
   cursor: pointer;
   border-radius: 7px;
-  background-color: #5e7106;
+  background-color: #cbad05;
   padding-top: 11px;
   padding-bottom: 13px;
   padding-right: 5px;
   padding-left: 5px;
+  color: #cac7c7;
 }
 
 .arrow-down {
@@ -125,8 +126,46 @@ body{
     display: block;
 }
 
+.section_top {
+
+  /* margin-top: 90px;
+  margin-bottom: 90px;
+  margin-left: 100px; */
+  color: var(--text-color);
+  background: radial-gradient(circle at right, #383737, #161616);
+  padding-top: 20px;
+  padding-bottom: 135px;
+}
+
+.foto{
+  right: 0;
+  position: absolute;
+  top: 0;
+  margin-top: 100px;
+  width: 300px;
+  margin-right: 100px;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+.Title {
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 50px;
+  color: #cac7c7;
+  padding-left: 60px;
+}
+
+.Konten {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #f1f1f1;
+  padding-left: 60px;
+}
+
 #section_top_middle{
-    background: radial-gradient(circle at left, #b08702, #0f0f0f);
+  background: radial-gradient(circle at right, #383737, #161616);
     width: 100%;
     position: relative;
     min-height: 50px;
@@ -208,7 +247,7 @@ img {vertical-align: middle;}
 
 .section1 {
   weight: 1000px;
-  height: 25px;
+  height: 0px;
   top: 250px;
   bottom:200px;
   right: 50px;
@@ -217,14 +256,19 @@ img {vertical-align: middle;}
   margin-left: 100px;
   align-items: center;
   border-radius: 20px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+
+
 }
 
 .container {
-  max-width: 1450px;
+  max-width: 2050px;
   margin: 0 auto;
   padding: 20px;
   top: 100px;
   height: 500px;
+  background: radial-gradient(circle at left, #383737, #161616);
 }
 
 .title {
@@ -232,19 +276,21 @@ img {vertical-align: middle;}
   align-items: center;
   color: var(--text-color);
   font-size: 20px;
+  color: #f7f8f4;
   margin-left: 550px;
   margin-bottom: 500px;
   top: 50px;
   line-height: 40px;
   padding-top: 40px;
   padding-left: 20px;
+  background: radial-gradient(circle at left, #383737, #161616);
 }
   
 #section_bottom_middle {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center;
-    background: radial-gradient(circle at left, #b08702, #0f0f0f);
+    background: radial-gradient(circle at right, #383737, #161616);
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -265,6 +311,7 @@ img {vertical-align: middle;}
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
   margin: 20px;
   border-radius: 15px;
+  height: 500px;
 }
 
 .card img{
@@ -299,4 +346,64 @@ img {vertical-align: middle;}
   border-radius: 4px;
   margin-top: 16px;
   color:#fff
+}
+
+footer {
+  background-color: var(--background-color);
+  padding: 20px 0;
+  background: radial-gradient(circle at left, #383737, #161616);
+
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  padding-bottom: 45px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    right:50px;
+    padding-left: 1050px;
+    padding-bottom: 20px;
+  }
+
+.icon a {
+  position: relative;
+  color: var(--primary-color);
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  display: block;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  background-color: white;
+  line-height: 60px;
+  margin: 0 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+  transition: 0.5s ease;
+}
+
+.icon a:hover {
+  color:var(--secondary-color);
+  color: white;
+  transform: translate(0, -30px);
+  box-shadow: 0 20px 8px rgba(0,0,0,0.7);
 }
