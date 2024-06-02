@@ -7,9 +7,11 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: radial-gradient(circle at left, #383737, #161616);
-  color: #fff;
+  background:linear-gradient(rgba(3, 3, 3, 0.9), rgba(4, 4, 4, 0.9));
+  color: #090909;
   padding: 5px 40px;
+  border-bottom: 0.5px solid #fcfbfb;
+  border-top: 0.5px solid #faf8f8;
 }
 
 .navbar-left {
@@ -36,7 +38,7 @@ body{
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: #fffefe;
   display: inline-block;
   justify-content: space-between;
   margin-right: 2px;
@@ -58,39 +60,58 @@ body{
 
 .login-button {
   padding: 6px 24px;
-  border: 2px solid #fff;
+  border: 2px solid #fafafa;
   background: transparent;
   border-radius: 6px;
   cursor: pointer;
-  color: #fff;
+  color: #fefcfc;
   text-decoration: none;
   margin-right: 20px;
+  letter-spacing: 1px;
 
 }
 .login-button:active {
   transform: scale(0.98);
 }
 
+.login-button:hover{
+  background-color: #c0c000;
+  color: #161616;
+  box-shadow: 0 0 5px rgb(204, 153, 0),
+              0 0 25px rgb(204, 153, 0),
+              0 0 50px rgb(204, 153, 0),
+              0 0 200px rgb(204, 153, 0);
+}
 .signup-button {
   padding: 6px 24px;
-  border: 2px solid #fff;
+  border: 2px solid #fffdfd;
   background: transparent;
   border-radius: 6px;
   cursor: pointer;
-  color: #fff;
+  color: #fdfcfc;
   text-decoration: none;
+  letter-spacing: 1px;
 
 }
 .signup-button:active {
   transform: scale(0.98);
 }
 
-
+.signup-button:hover{
+  background-color: #c0c000;
+  color: #161616;
+  box-shadow: 0 0 5px rgb(204, 153, 0),
+              0 0 25px rgb(204, 153, 0),
+              0 0 50px rgb(204, 153, 0),
+              0 0 200px rgb(204, 153, 0);
+}
 .section_top {
   color: var(--text-color);
-  background: radial-gradient(circle at right, #383737, #161616);
+  background:linear-gradient(rgba(130, 129, 129, 0.5), rgba(4, 4, 4, 0.8));
   padding-top: 20px;
   padding-bottom: 135px;
+  border-bottom: 0.5px solid #010101;
+  
 }
 
 .foto{
@@ -100,15 +121,32 @@ body{
   margin-top: 100px;
   width: 300px;
   margin-right: 100px;
-  border-radius: 20px;
+  border-radius: 40px;
   padding-top: 10px;
+  border: 3px #010101;
 }
+
+/* .gambar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background-color: rgba(0,0,0,0.5);
+
+} */
 .Title {
   font-size: 50px;
   font-weight: 600;
   padding-top: 60px;
   color: #cac7c7;
   padding-left: 60px;
+  letter-spacing: 5px;
 }
 
 .Konten {
@@ -118,15 +156,18 @@ body{
   line-height: 20px;
   color: #f1f1f1;
   padding-left: 60px;
+  letter-spacing: 1px;
 }
 
 #section_top_middle{
-  background: radial-gradient(circle at right, #383737, #161616);
+  background:linear-gradient(rgba(4, 4, 4, 0.8), rgba(130, 129, 129, 0.8));
     width: 100%;
     position: relative;
     min-height: 50px;
     padding-right: 75px;
     padding-left: 75px;
+    border-bottom: 2px solid #f1f1f1;
+    border-top: 2px solid #f1f1f1;
 }
 
 * {box-sizing: border-box}
@@ -135,7 +176,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 img {vertical-align: middle;}
 
 .batik-background {
-    background-image: url( 'img/batik.png');
+    background-image: url( "assets/batik.png");
     background-size: 10px;
     background-repeat: repeat;
 }
@@ -179,7 +220,7 @@ img {vertical-align: middle;}
   right: 50px;
   position: relative; 
   display: flex; 
-  margin-left: 100px;
+  margin-left: 180px;
   align-items: center;
   border-radius: 20px;
   margin-top: 0px;
@@ -194,7 +235,7 @@ img {vertical-align: middle;}
   padding: 20px;
   top: 100px;
   height: 500px;
-  background: radial-gradient(circle at left, #383737, #161616);
+  background: radial-gradient(circle at bottom, #383737, #222020);
 }
 
 .title {
@@ -209,17 +250,22 @@ img {vertical-align: middle;}
   line-height: 40px;
   padding-top: 40px;
   padding-left: 20px;
-  background: radial-gradient(circle at left, #383737, #161616);
+  background: radial-gradient(circle at top, #383737, #161616);
+  border: 2px solid #f9f6f6;
+  position: relative;
 }
   
 #section_bottom_middle {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center;
-    background: radial-gradient(circle at right, #383737, #161616);
+    /* background: radial-gradient(circle at right, #383737, #161616); */
+    background: grey;
     position: relative;
     margin: 0px;
     padding: 0px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
   }
 
 .card-container{
@@ -231,10 +277,10 @@ img {vertical-align: middle;}
 
 .card{
   width: 400px;
-  background-color: grey;
+  background-color: rgb(40, 39, 39);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 4px rgba(243, 239, 239, 0.2);
   margin: 20px;
   border-radius: 15px;
   height: 500px;
@@ -244,11 +290,14 @@ img {vertical-align: middle;}
   width: 100%;
   height: 50%;
   border-radius: 15px;
+  opacity: 0.7;
 }
 
 .card-content{
   padding: 16px;
   border-radius: 15px;
+  color: white;
+  letter-spacing: 1px;
 }
 
 .card-content h3{
@@ -271,7 +320,18 @@ img {vertical-align: middle;}
   text-decoration: none;
   border-radius: 4px;
   margin-top: 16px;
-  color:#fff
+  color:#fff;
+  position: absolute;
+  
+}
+
+.card-content .btn:hover{
+  background-color: transparent;
+  color: #fdfcfc;
+  box-shadow: 0 0 5px rgb(2, 2, 2),
+              0 0 25px rgb(3, 3, 3),
+              0 0 50px rgb(7, 7, 7),
+              0 0 200px rgb(204, 153, 0);
 }
 
 footer {
@@ -297,6 +357,21 @@ footer {
   padding-bottom: 45px;
 }
 
+.section-with-image{
+  position: relative;
+}
+
+.section-with-image .content {
+  /* Atur gaya konten di dalam section */
+}
+
+.section-with-image img {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 10%;
+  opacity: 0.2;
+}
 .icon{
   display: flex;
   justify-content: center;
@@ -332,4 +407,21 @@ footer {
   color: white;
   transform: translate(0, -30px);
   box-shadow: 0 20px 8px rgba(0,0,0,0.7);
+}
+
+.section-with-image-a{
+  position: relative;
+}
+
+.section-with-image-a .content {
+  /* Atur gaya konten di dalam section */
+}
+
+.section-with-image-a img {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 10%;
+  margin-left: 90%;
+  opacity: 0.2;
 }
